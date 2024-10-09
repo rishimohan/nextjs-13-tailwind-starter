@@ -1,8 +1,8 @@
 import { Instrument_Serif, PT_Mono } from "next/font/google";
 import Link from "next/link";
-const instrument = Instrument_Serif({ weight: ["400"], subsets: ['latin'] });
+const instrument = Instrument_Serif({ weight: ["400"], subsets: ["latin"] });
 const pt_mono = PT_Mono({ weight: ["400"], subsets: ["latin"] });
-import clsx from 'clsx'
+import clsx from "clsx";
 
 export default () => (
   <div className="min-w-screen min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-200 to-purple-400 p-5">
@@ -12,7 +12,7 @@ export default () => (
           Contains →
         </h2>
         <ul className="list-disc list-inside text-gray-500 space-y-1">
-          <li>Next.js 13</li>
+          <li>Next.js 14</li>
           <li>TailwindCSS</li>
           <li>Radix UI components</li>
           <li>Framer motion</li>
@@ -26,17 +26,37 @@ export default () => (
         <ul className="list-disc list-inside text-gray-500 space-y-1">
           <li>
             Clone this repo or use as template
-            <span className={clsx(pt_mono.className, "text-black border-b border-gray-200")}>
-              `git clone git@github.com:rishimohan/nextjs-13-tailwind-starter.git`
+            <span
+              className={clsx(
+                pt_mono.className,
+                "text-black border-b border-gray-200"
+              )}
+            >
+              `git clone
+              git@github.com:rishimohan/nextjs-13-tailwind-starter.git`
             </span>
           </li>
           <li>
             Get started by editing{" "}
-            <span className={clsx(pt_mono.className, "text-black border-b border-gray-200")}>`src/app/page.js`</span>
+            <span
+              className={clsx(
+                pt_mono.className,
+                "text-black border-b border-gray-200"
+              )}
+            >
+              `src/app/page.js`
+            </span>
           </li>
           <li>
             All the UI components are at{" "}
-            <span className={clsx(pt_mono.className, "text-black border-b border-gray-200")}>`ui/index.js`</span>
+            <span
+              className={clsx(
+                pt_mono.className,
+                "text-black border-b border-gray-200"
+              )}
+            >
+              `ui/index.js`
+            </span>
           </li>
         </ul>
       </div>
